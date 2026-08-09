@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Result</title>
+</head>
+<body>
+
+<h2>Submitted User</h2>
+<p> <i>this is result.html page</i></p>
+<p>Name: <span th:text="${user.name}"></span></p>
+
+<p>Email: <span th:text="${user.email}"></span></p>
+
+
+<a th:href="@{/form}">Back</a>
+
+</body>
+</html>
