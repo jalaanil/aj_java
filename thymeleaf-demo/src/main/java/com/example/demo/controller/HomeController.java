@@ -15,7 +15,7 @@ public class HomeController {
     @GetMapping("/")
     public String home(Model model) {
 
-        model.addAttribute("title", "Welcome to Thymeleaf");
+        model.addAttribute("title", "Welcome to Thymeleaf - 09.08.2026");
         model.addAttribute("message", "This text comes from the controller.");
 
         return "index";
