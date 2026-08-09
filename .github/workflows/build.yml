@@ -28,6 +28,9 @@ jobs:
       - name: Build with Maven
         run: mvn --batch-mode verify
 
+      - name: Build Docker image
+        run: docker build -t thymeleaf-demo:latest .        
+
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
